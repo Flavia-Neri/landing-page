@@ -1,20 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @font-face {
   font-family: "Socialico";
-  src: url("fonts/Socialico.ttf"); }
+  src: url("fonts/Socialico.ttf");
+}
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #faf9f9; }
+  font-family: "Open Sans", sans-serif;
+  background-color: #faf9f9;
+}
 
 button {
   height: 56px;
@@ -23,13 +27,16 @@ button {
   font-weight: 600;
   cursor: pointer;
   border: 2px solid #525252;
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 i {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 header {
   height: 118px;
@@ -37,37 +44,44 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #41c27d; }
+  background-color: #41c27d;
+}
 
 nav {
   display: flex;
-  align-items: center; }
-  nav ul {
-    width: 17.18rem;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    list-style: none; }
-    nav ul li a {
-      font-size: 1rem;
-      color: #fff;
-      display: block; }
-      nav ul li a:hover {
-        font-size: 1.06rem;
-        transition: all 0.8s ease; }
+  align-items: center;
+}
+nav ul {
+  width: 17.18rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+nav ul li a {
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+}
+nav ul li a:hover {
+  font-size: 1.06rem;
+  transition: all 0.8s ease;
+}
 
 .socialNet {
   width: 7.68rem;
   margin-top: 15px;
   display: flex;
-  justify-content: space-between; }
-  .socialNet i {
-    font-family: "Socialico";
-    font-size: 33px;
-    color: #fff;
-    font-style: normal;
-    cursor: pointer; }
+  justify-content: space-between;
+}
+.socialNet i {
+  font-family: "Socialico";
+  font-size: 33px;
+  color: #fff;
+  font-style: normal;
+  cursor: pointer;
+}
 
 .banner {
   height: 80vh;
@@ -77,166 +91,214 @@ nav {
   background-image: url("images/banner.png");
   background-size: cover;
   background-position-x: 53%;
-  background-repeat: no-repeat; }
-  .banner .contentBanner {
-    width: 300px; }
-    .banner .contentBanner h1 {
-      margin: 0;
-      font-size: 1.9rem;
-      color: #525252; }
-    .banner .contentBanner p {
-      width: 200px;
-      font-size: 1rem;
-      color: #6e6c6c;
-      line-height: 28px; }
-    .banner .contentBanner .linkApp {
-      height: 120px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      .banner .contentBanner .linkApp button {
-        width: 155px; }
-        .banner .contentBanner .linkApp button i {
-          margin-right: 11px; }
-        .banner .contentBanner .linkApp button:focus, .banner .contentBanner .linkApp button:active {
-          box-shadow: none;
-          outline: none; }
+  background-repeat: no-repeat;
+}
+.banner .contentBanner {
+  width: 300px;
+}
+.banner .contentBanner h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  color: #525252;
+}
+.banner .contentBanner p {
+  width: 200px;
+  font-size: 1rem;
+  color: #6e6c6c;
+  line-height: 28px;
+}
+.banner .contentBanner .linkApp {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.banner .contentBanner .linkApp button {
+  width: 155px;
+}
+.banner .contentBanner .linkApp button i {
+  margin-right: 11px;
+}
+.banner .contentBanner .linkApp button:focus,
+.banner .contentBanner .linkApp button:active {
+  box-shadow: none;
+  outline: none;
+}
 
-.enterpriseList {
+.enterprises {
   height: 92px;
+  display: flex;
+  background-color: #f3f3f3;
+}
+.enterprises .enterpriseList {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #f3f3f3; }
-  .enterpriseList img {
-    width: 70px; }
+}
+.enterprises .enterpriseList img {
+  width: 70px;
+}
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5.9rem; }
-  main .product div img {
-    margin-right: 46px; }
+  padding-top: 5.9rem;
+}
+main .product div img {
+  margin-right: 46px;
+}
 
 .description {
-  width: 250px; }
-  .description .textDescription h1 {
-    margin: 0;
-    font-size: 1.9rem;
-    line-height: 2.56rem;
-    color: #525151; }
-  .description .textDescription p {
-    font-size: 0.9rem;
-    line-height: 1.8rem;
-    color: #767272; }
-  .description .itemsDescription {
-    margin-top: 1.75rem;
-    color: #6d6c6c; }
-    .description .itemsDescription div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 1.9rem; }
-      .description .itemsDescription div p {
-        font-size: 0.9rem;
-        width: 150px;
-        line-height: 2.75rem;
-        font-weight: 600; }
-  .description .btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .description .btn button {
-      color: #525252;
-      text-align: center; }
-      .description .btn button i {
-        font-size: 1.25rem; }
-    .description .btn a {
-      color: #636363;
-      margin: 2.18rem; }
+  width: 250px;
+}
+.description .textDescription h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  line-height: 2.56rem;
+  color: #525151;
+}
+.description .textDescription p {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  color: #767272;
+}
+.description .itemsDescription {
+  margin-top: 1.75rem;
+  color: #6d6c6c;
+}
+.description .itemsDescription div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.9rem;
+}
+.description .itemsDescription div p {
+  font-size: 0.9rem;
+  width: 150px;
+  line-height: 2.75rem;
+  font-weight: 600;
+}
+.description .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description .btn button {
+  color: #525252;
+  text-align: center;
+}
+.description .btn button i {
+  font-size: 1.25rem;
+}
+.description .btn a {
+  color: #636363;
+  margin: 2.18rem;
+}
 
 #features {
+  background-color: #41c27d;
+}
+#features .contentFeatures {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 5.37rem;
-  background-color: #41c27d; }
-  #features div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 280px;
-    margin-bottom: 4.25rem;
-    color: #fff; }
-    #features div i {
-      font-size: 1.87rem; }
-    #features div p {
-      font-size: 1.1rem;
-      line-height: 1.62rem;
-      text-transform: uppercase; }
-    #features div span {
-      font-size: 0.8rem;
-      line-height: 1.75rem;
-      text-align: center; }
+}
+#features .contentFeatures div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin-bottom: 4.25rem;
+  color: #fff;
+}
+#features .contentFeatures div i {
+  font-size: 1.87rem;
+}
+#features .contentFeatures div p {
+  font-size: 1.1rem;
+  line-height: 1.62rem;
+  text-transform: uppercase;
+}
+#features .contentFeatures div span {
+  font-size: 0.8rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
 
 #testimonials {
   color: #767272;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6.25rem 0 4.06rem 0; }
-  #testimonials span {
-    width: 290px;
-    text-align: center;
-    font-size: 1.12rem;
-    line-height: 2.43rem; }
-  #testimonials div {
-    width: 102px;
-    margin-top: 3.12rem;
-    text-align: center;
-    line-height: 1.25rem; }
-    #testimonials div h1 {
-      margin: 0;
-      font-size: 1rem; }
-    #testimonials div p {
-      font-size: 0.9rem; }
+  padding: 6.25rem 0 4.06rem 0;
+}
+#testimonials span {
+  width: 290px;
+  text-align: center;
+  font-size: 1.12rem;
+  line-height: 2.43rem;
+}
+#testimonials div {
+  width: 102px;
+  margin-top: 3.12rem;
+  text-align: center;
+  line-height: 1.25rem;
+}
+#testimonials div h1 {
+  margin: 0;
+  font-size: 1rem;
+}
+#testimonials div p {
+  font-size: 0.9rem;
+}
 
 .sendEmail {
   color: #fff;
   padding: 6.25rem 0;
-  background-color: #41c27d; }
-  .sendEmail form {
-    height: 125px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-    .sendEmail form label {
-      font-size: 1.25rem; }
-    .sendEmail form div {
-      width: 90%;
-      height: 50px;
-      display: flex;
-      justify-content: space-between;
-      background-color: #fff;
-      padding: 0 1.25rem; }
-      .sendEmail form div input {
-        width: 90%;
-        height: 50px;
-        border: none; }
-        .sendEmail form div input:focus, .sendEmail form div input:active {
-          box-shadow: none;
-          outline: none; }
-        .sendEmail form div input::placeholder {
-          font-size: 0.9rem;
-          line-height: 1.62rem;
-          color: #41c17d; }
-      .sendEmail form div i {
-        margin-top: 0.9rem;
-        font-size: 1.25rem;
-        color: #47ae77; }
+  background-color: #41c27d;
+}
+.sendEmail form {
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sendEmail form label {
+  font-size: 1.25rem;
+}
+.sendEmail form div {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0 1.25rem;
+}
+.sendEmail form div input {
+  width: 90%;
+  height: 50px;
+  border: none;
+}
+.sendEmail form div input:focus,
+.sendEmail form div input:active {
+  box-shadow: none;
+  outline: none;
+}
+.sendEmail form div input::placeholder {
+  font-size: 0.9rem;
+  line-height: 1.62rem;
+  color: #41c17d;
+}
+.sendEmail form div i {
+  margin-top: 0.9rem;
+  font-size: 1.25rem;
+  color: #47ae77;
+}
 
 footer {
   display: flex;
@@ -244,118 +306,171 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 6.37rem 0 4.87rem 0; }
-  footer .systemsIcons {
-    width: 236px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3.75rem; }
-    footer .systemsIcons i {
-      font-size: 2.8rem;
-      color: #dddddd; }
-  footer p {
-    font-size: 0.8rem;
-    color: #767272; }
-    footer p a {
-      font-weight: bold;
-      color: #565555; }
+  padding: 6.37rem 0 4.87rem 0;
+}
+footer .systemsIcons {
+  width: 236px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.75rem;
+}
+footer .systemsIcons i {
+  font-size: 2.8rem;
+  color: #dddddd;
+}
+footer p {
+  font-size: 0.8rem;
+  color: #767272;
+}
+footer p a {
+  font-weight: bold;
+  color: #565555;
+}
 
 @media screen and (min-width: 768px) {
   header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 12.5rem; }
+    padding: 0 12.5rem;
+  }
   .banner {
-    background-position-x: 0%; }
-    .banner .contentBanner {
-      width: 560px; }
-      .banner .contentBanner p {
-        width: 100%;
-        padding: 0 1.37rem 2.18rem 0; }
-      .banner .contentBanner .linkApp {
-        width: 460px;
-        flex-direction: row;
-        justify-content: space-between; }
-        .banner .contentBanner .linkApp button {
-          width: 213px; }
-  .enterpriseList img {
-    width: 132px; }
+    background-position-x: 0%;
+  }
+  .banner .contentBanner {
+    width: 560px;
+  }
+  .banner .contentBanner p {
+    width: 100%;
+    padding: 0 1.37rem 2.18rem 0;
+  }
+  .banner .contentBanner .linkApp {
+    width: 460px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .banner .contentBanner .linkApp button {
+    width: 213px;
+  }
+  .enterprises .enterpriseList img {
+    width: 132px;
+  }
   main {
     flex-direction: row;
     justify-content: center;
-    align-items: initial; }
-    main .product div {
-      margin-right: 10.68rem; }
-      main .product div img {
-        margin: 0; }
-    main .description {
-      width: 478px; }
-      main .description .textDescription h1 {
-        font-size: 2.12rem;
-        line-height: 2.87rem; }
-      main .description .textDescription p {
-        font-size: 1rem;
-        line-height: 2rem; }
-      main .description .itemsDescription {
-        margin-bottom: 3.93rem; }
-        main .description .itemsDescription div {
-          width: 405px;
-          margin-bottom: initial;
-          flex-direction: row; }
-          main .description .itemsDescription div p {
-            width: initial;
-            justify-content: initial;
-            margin: 0 0 0 2.06rem;
-            font-size: 1rem; }
-      main .description .btn {
-        width: 386px;
-        padding-bottom: 9rem;
-        flex-direction: row;
-        justify-content: space-between; }
-        main .description .btn button {
-          width: 260px; }
-        main .description .btn a {
-          margin: 0;
-          line-height: 2rem; }
-  #features {
+    align-items: initial;
+  }
+  main .product div {
+    margin-right: 10.68rem;
+  }
+  main .product div img {
+    margin: 0;
+  }
+  main .description {
+    width: 478px;
+  }
+  main .description .textDescription h1 {
+    font-size: 2.12rem;
+    line-height: 2.87rem;
+  }
+  main .description .textDescription p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  main .description .itemsDescription {
+    margin-bottom: 3.93rem;
+  }
+  main .description .itemsDescription div {
+    width: 405px;
+    margin-bottom: initial;
+    flex-direction: row;
+  }
+  main .description .itemsDescription div p {
+    width: initial;
+    justify-content: initial;
+    margin: 0 0 0 2.06rem;
+    font-size: 1rem;
+  }
+  main .description .btn {
+    width: 386px;
+    padding-bottom: 9rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .description .btn button {
+    width: 260px;
+  }
+  main .description .btn a {
+    margin: 0;
+    line-height: 2rem;
+  }
+  #features .contentFeatures {
     flex-direction: row;
     padding: 6.25rem 0;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; }
-    #features div {
-      width: 292px;
-      margin: 0 46px;
-      padding-bottom: 2.87rem; }
-      #features div p {
-        font-size: 1.25rem; }
-      #features div span {
-        font-size: 1rem; }
+    flex-wrap: wrap;
+  }
+  #features .contentFeatures div {
+    width: 292px;
+    margin: 0 46px;
+    padding-bottom: 2.87rem;
+  }
+  #features .contentFeatures div p {
+    font-size: 1.25rem;
+  }
+  #features .contentFeatures div span {
+    font-size: 1rem;
+  }
   #testimonials span {
-    width: 820px; }
+    width: 820px;
+  }
   #testimonials p {
-    margin: 0; }
+    margin: 0;
+  }
   .sendEmail form div {
-    width: 48%; }
+    width: 48%;
+  }
   footer p {
-    margin: 0; } }
+    margin: 0;
+  }
+}
 
 @media screen and (min-width: 1550px) {
   body {
-    font-size: 18px; }
+    font-size: 18px;
+  }
   header .socialNet {
-    width: 200px; }
-    header .socialNet i {
-      font-size: 40px; }
-  #features div {
-    width: 25%; } }
+    width: 200px;
+  }
+  header .socialNet i {
+    font-size: 40px;
+  }
+  .enterprises {
+    justify-content: center;
+  }
+  .enterprises .enterpriseList {
+    width: 80%;
+  }
+  #features {
+    display: flex;
+    justify-content: center;
+  }
+  #features .contentFeatures {
+    width: 80%;
+  }
+}
 
 @media screen and (min-width: 1900px) {
   body {
-    font-size: 20px; }
+    font-size: 20px;
+  }
   header .socialNet i {
-    font-size: 50px; }
+    font-size: 50px;
+  }
   .banner .contentBanner {
-    width: 680px; }
-    .banner .contentBanner p {
-      width: 82%; } }
+    width: 680px;
+  }
+  .banner .contentBanner p {
+    width: 82%;
+  }
+}

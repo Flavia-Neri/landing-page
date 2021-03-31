@@ -116,15 +116,19 @@ nav{
         }
     }
 }
-.enterpriseList{
+.enterprises{
     height:92px;
     display:flex;
-    justify-content:space-around;
-    align-items:center;
     background-color:#f3f3f3;
-    img{
-        width:70px;
-    }
+    .enterpriseList{
+        width:100%;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        img{
+            width:70px;
+        }
+}
 }
 main{
     display: flex;
@@ -190,30 +194,32 @@ main{
     }
 }
 #features{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    padding-top:5.37rem;
     background-color:#41c27d;
-    div{
+    .contentFeatures{
         display:flex;
         flex-direction: column;
         align-items:center;
-        width:280px;
-        margin-bottom:4.25rem;
-        color:#fff;
-        i{
-            font-size:1.87rem;
-        }
-        p{
-            font-size:1.1rem;
-            line-height: 1.62rem;
-            text-transform: uppercase;
-        }
-        span{
-            font-size:0.8rem;
-            line-height: 1.75rem;
-            text-align:center;
+        padding-top:5.37rem;
+        div{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            width:280px;
+            margin-bottom:4.25rem;
+            color:#fff;
+            i{
+                font-size:1.87rem;
+            }
+            p{
+                font-size:1.1rem;
+                line-height: 1.62rem;
+                text-transform: uppercase;
+            }
+            span{
+                font-size:0.8rem;
+                line-height: 1.75rem;
+                text-align:center;
+            }
         }
     }
 }
@@ -336,11 +342,13 @@ footer{
             }
         }
     }
-    .enterpriseList{
-        img{
-            width:132px;
+   .enterprises{
+        .enterpriseList{
+            img{
+                width:132px;
+            }
         }
-    }
+   }
     main{
         flex-direction: row;
         justify-content: center;
@@ -395,20 +403,22 @@ footer{
         }
     }
     #features{
-        flex-direction: row;
-        padding:6.25rem 0;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        div{
-            width:292px;
-            margin:0 46px;
-            padding-bottom:2.87rem;
-            p{
-                font-size:1.25rem;
-            }
-            span{
-                font-size:1rem;
+        .contentFeatures{
+            flex-direction: row;
+            padding:6.25rem 0;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            div{
+                width:292px;
+                margin:0 46px;
+                padding-bottom:2.87rem;
+                p{
+                    font-size:1.25rem;
+                }
+                span{
+                    font-size:1rem;
+                }
             }
         }
     }
@@ -433,7 +443,7 @@ footer{
         }
     }
 }
-@media screen and(min-width:1550px){
+@media screen and (min-width:1550px){
     body{
         font-size: 18px;
     }
@@ -445,9 +455,17 @@ footer{
             }
         }
     }
+    .enterprises{
+        justify-content:center;
+        .enterpriseList{
+            width:80%;
+        }
+    }
     #features{
-        div{
-            width:25%;
+        display:flex;
+        justify-content:center;
+        .contentFeatures{
+                width:80%;
         }
     }
 }
