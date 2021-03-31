@@ -14,6 +14,23 @@ body{
     padding:0;
     font-size:16px;
     font-family: 'Open Sans', sans-serif;
+    background-color:#faf9f9;
+}
+button{
+    height:56px;
+    color:#525252;
+    font-size:0.9rem;
+    font-weight: 600;
+    cursor:pointer;
+    border:2px solid #525252;
+    background-color:transparent;
+}
+    i{
+        font-size:1.25rem;
+    }
+
+a{
+    text-decoration:none;
 }
 header{
     height:118px;
@@ -27,7 +44,7 @@ nav{
     display:flex;
     align-items:center;
     ul{
-        width:275px;
+        width:17.18rem;
         margin:0;
         padding:0;
         display:flex;
@@ -35,11 +52,11 @@ nav{
         list-style:none;
         li{
             a{
+                font-size: 1rem;
                 color:#fff;
                 display:block;
-                text-decoration:none;
                 &:hover{
-                  font-size:17px;  
+                  font-size:1.06rem;  
                   transition:all 0.8s ease;
                 }
             }
@@ -47,7 +64,7 @@ nav{
     }
 }
 .socialNet{
-    width:123px;
+    width:7.68rem;
     margin-top:15px;
     display:flex;
     justify-content:space-between;
@@ -79,7 +96,7 @@ nav{
             width:200px;
             font-size:1rem;
             color:#6e6c6c;
-            line-height: 25px;
+            line-height: 28px;
         }
         .linkApp{
             height:120px;
@@ -87,15 +104,8 @@ nav{
             flex-direction: column;
             justify-content:space-between;
             button{
-                height:56px;
-                width:150px;
-                color:#525252;
-                font-size:0.9rem;
-                cursor:pointer;
-                border:2px solid #525252;
-                background-color:transparent;
+                width:155px;
                 i{
-                    width:11px;
                     margin-right:11px;
                 }
                 &:focus, &:active{
@@ -120,8 +130,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top:95px;
-    background-color:#faf9f9;
+    padding-top:5.9rem;
     .product{
         div{
             img{
@@ -133,45 +142,332 @@ main{
 }
 .description{
     width:250px;
-    color:#525252;
     .textDescription{
         h1{
             margin:0;
             font-size:1.9rem; 
-            line-height: 41px;
+            line-height: 2.56rem;
+            color:#525151;
         }
         p{
             font-size:0.9rem;
-            line-height: 29px;
+            line-height: 1.8rem;
+            color:#767272;
         }
     }
     .itemsDescription{
-        margin-top:60px;
+        margin-top:1.75rem;
+        color:#6d6c6c;
         div{
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            margin-bottom:31px;
+            margin-bottom:1.9rem;
             p{
                 font-size: 0.9rem;
+                width:150px;
+                line-height:2.75rem;
+                font-weight: 600;
             }
         }
     }
-    div{
+    .btn{
         display:flex;
         flex-direction: column;
         align-items:center;
         button{
-            height:56px;
-            font-size: 0.9rem;
-            line-height:29px;
             color:#525252;
-            border:2px solid #525252;
-            background-color: transparent;
+            i{
+                font-size:1.25rem;
+            }
+            text-align: center;
+        }
+        a{
+            color:#636363;
+            margin:2.18rem;
+        }
+    }
+}
+#features{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top:5.37rem;
+    background-color:#41c27d;
+    div{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        width:280px;
+        margin-bottom:4.25rem;
+        color:#fff;
+        i{
+            font-size:1.87rem;
         }
         p{
-            color:#636363;
+            font-size:1.1rem;
+            line-height: 1.62rem;
+            text-transform: uppercase;
+        }
+        span{
+            font-size:0.8rem;
+            line-height: 1.75rem;
+            text-align:center;
+        }
+    }
+}
+#testimonials{
+    color:#767272;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:6.25rem 0 4.06rem 0;
+    span{
+        width:290px;
+        text-align:center;
+        font-size: 1.12rem;
+        line-height: 2.43rem;
+    }
+    div{
+        width:102px;
+        margin-top:3.12rem;
+        text-align: center;
+        line-height:1.25rem;
+        h1{
+            margin:0;
+            font-size:1rem;
+        }
+        p{
+            font-size:0.9rem;
+        }
+    }
+}
+.sendEmail{
+    color:#fff;
+    padding: 6.25rem 0 ;
+    background-color:#41c27d;
+    form{
+        height: 125px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        label{
+            font-size:1.25rem;
+        }
+        div{
+            width:90%;
+            height:50px;
+            display:flex;
+            justify-content: space-between;
+            background-color:#fff;
+            padding: 0 1.25rem;
+            input{
+                width:90%;
+                height:50px;
+                border:none;
+                
+                &:focus, &:active{
+                    box-shadow: none;
+                    outline: none;
+                }
+                &::placeholder{
+                    font-size:0.9rem;
+                    line-height: 1.62rem;
+                    color:#41c17d;
+                }
+            }
+            i{
+                margin-top:0.9rem;
+                font-size: 1.25rem;
+                color:#47ae77;
+            }
+        }
+    }
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding:6.37rem 0 4.87rem 0;
+    .systemsIcons{
+        width:236px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3.75rem;
+        i{
+            font-size:2.8rem;
+            color:#dddddd;
+        }
+    }
+    p{
+       font-size:0.8rem;
+       color:#767272;
+       a{
+           font-weight: bold;
+           color:#565555;
+       }
+    }
+}
+@media screen and (min-width:768px){
+    header{
+        flex-direction:row;
+        justify-content:space-between;
+        padding:0 12.5rem;
+    }
+    .banner{
+        background-position-x:0%;
+        .contentBanner{
+            width:560px;
+            p{
+                width:100%;
+                padding: 0 1.37rem 2.18rem 0;
+            }
+            .linkApp{
+                width:460px;
+                flex-direction: row;
+                justify-content:space-between;
+                button{
+                    width:213px;
+                }
+            }
+        }
+    }
+    .enterpriseList{
+        img{
+            width:132px;
+        }
+    }
+    main{
+        flex-direction: row;
+        justify-content: center;
+        align-items: initial;
+        .product{
+            div{
+                margin-right: 10.68rem;
+                img{
+                    margin:0;
+                }
+            }
+        }
+        .description{
+            width:478px;
+            .textDescription{
+                h1{
+                    font-size: 2.12rem;
+                    line-height: 2.87rem;
+                }
+                p{
+                    font-size: 1rem;
+                    line-height: 2rem;
+                }
+            }
+            .itemsDescription{
+                margin-bottom:3.93rem;
+                div{
+                    width:405px;
+                    margin-bottom:initial;
+                    flex-direction: row;
+                    p{
+                        width:initial;
+                        justify-content:initial;
+                        margin: 0 0 0 2.06rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .btn{
+                width:386px;
+                padding-bottom:9rem;
+                flex-direction: row;
+                justify-content:space-between;
+                button{
+                    width:260px;
+                }
+                a{
+                    margin:0;
+                    line-height:2rem;
+                }
+            }
+        }
+    }
+    #features{
+        flex-direction: row;
+        padding:6.25rem 0;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            width:292px;
+            margin:0 46px;
+            padding-bottom:2.87rem;
+            p{
+                font-size:1.25rem;
+            }
+            span{
+                font-size:1rem;
+            }
+        }
+    }
+    #testimonials{
+        span{
+            width:820px;
+        }
+        p{
+            margin:0;
+        }
+    }
+    .sendEmail{
+        form{
+            div{
+                width:48%;
+            }
+        }
+    }
+    footer{
+        p{
+            margin:0;
+        }
+    }
+}
+@media screen and(min-width:1550px){
+    body{
+        font-size: 18px;
+    }
+    header{
+        .socialNet{
+            width:200px;
+            i{
+                font-size:40px;
+            }
+        }
+    }
+    #features{
+        div{
+            width:25%;
+        }
+    }
+}
+@media screen and(min-width:1900px){
+    body{
+        font-size: 20px;
+    }
+    header{
+        .socialNet{
+            i{
+                font-size:50px;
+            }
+        }
+    }
+    .banner{
+        .contentBanner{
+            width:680px;
+            p{
+                width:82%;
+            }
         }
     }
 }
